@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#webpack-dev-server-client-overlay{
+  display:none;
+}
+body{
+  background-color: #070623;
+  font-family: Segoe UI;
+}
+.container-fluid {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header {
+}
+h1{
+  color : #AAA9BC;
+}
+.body{
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square{
+  max-width: 100%;
+  max-height: 100%;
+}
+.kotak{
+  
+  width: 90%;
+  padding-bottom: 1%;
+}
+
+.Card-movie {
+  width: 12rem;
+  color: white;
+  position: relative;
+  cursor: pointer;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+
+.Movie-image {
+  margin-top:10px;
+  margin-left:5px;
+  border-radius: 5%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Card-movie:hover, .Card-movie:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.788);
+	-webkit-transform: scale(1.0);
+	transform: scale(1.05);
+}
+.time {
+  color :  #AAA9BC ;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: black;
+}
+
+.Movie-card:hover .overlay {
+  opacity: 1;
+}
